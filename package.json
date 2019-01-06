@@ -1,0 +1,9 @@
+{
+  "name": "eslint-plugin-readonly",
+  "version": "0.0.1",
+  "description": "Mark objects declared as constants as readonly",
+  "main": "index.js",
+  "repository": "https://github.com/juliettepretot/eslint-plugin-readonly.git",
+  "author": "Juliette Pretot",
+  "license": "MIT"
+}
