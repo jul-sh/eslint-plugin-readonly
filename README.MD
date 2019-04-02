@@ -47,11 +47,13 @@ fooArray.unshift('baz')
 
 ## Comparison
 
-|                                                                                                                   | Code editor annotations |    No runtime cost     | Supports nested properties |
+|                                                                                                                   | Code editor annotations |      No runtime .      | Supports nested properties |
 | ----------------------------------------------------------------------------------------------------------------- | :---------------------: | :--------------------: | :------------------------: |
 | eslint-plugin-readonly                                                                                            |           ✅            |           ✅           |             ✅             |
-| [Object.freeze()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze) |           ❌            |           ✅           |      🔶 (with helper)      |
+| [Object.freeze()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze) |           ❌            |           ✅           |    ❌ (requires helper)    |
 | [Immutable.js](https://facebook.github.io/immutable-js/)                                                          |           ❌            | ❌ (~17kb bundle size) |             ✅             |
+
+Note that Immutable.js offers the benefit of [structural sharing](https://medium.com/@dtinth/immutable-js-persistent-data-structures-and-structural-sharing-6d163fbd73d2) that can offer performance benefits for objects.
 
 ## When not to use eslint-plugin-readonly
 
